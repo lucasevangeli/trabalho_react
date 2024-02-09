@@ -9,7 +9,7 @@ function App() {
 
   const calculaImc = () => {
     const imc = peso / (altura * altura);
-    const imcFormatado = imc.toFixed(2);
+    const imcFormatado = parseFloat(imc.toFixed(2));
     let classificacaoImc;
 
     if (imc < 18.5) {
